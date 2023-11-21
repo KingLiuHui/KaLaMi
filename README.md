@@ -14,12 +14,12 @@ KaLaMi is a lightweight framework that supports obtaining App-related informatio
 #  Installation with Swift Package Manager
 To add KaLaMi to your Xcode project, select File -> Swift Packages -> Add Package Depedency.  
 
-Then enter https://github.com/AudioKit/AudioKit for the URL.  
+Then enter https://github.com/KingLiuHui/KaLaMi.git for the URL.  
 
 You can define which version range you want, or which branch to use.  
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AFNetworking/AFNetworking.git")
+    .package(url: "https://github.com/KingLiuHui/KaLaMi.git")
 ]
 ```
 #  Usage
