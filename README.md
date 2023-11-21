@@ -23,31 +23,31 @@ dependencies: [
 ]
 ```
 #  Usage
-Get the name of the App:
+1.Get the name of the App:
 ```
  KaLaMi.shared.getAppName()
 ```
-Get App version:
+2.Get App version:
 ```
  KaLaMi.shared.getAppVersion()
 ```
-Get the platform the App is running on:
+3.Get the platform the App is running on:
 ```
  KaLaMi.shared.getAppPlatform()
 ```
-Get the BundleID of the App:
+4.Get the BundleID of the App:
 ```
  KaLaMi.shared.getAppIdentifier()
 ```
-Get system version:
+5.Get system version:
 ```
  KaLaMi.shared.getSystemVersion()
 ```
-Get the Bundle Version of the App:
+6.Get the Bundle Version of the App:
 ```
  KaLaMi.shared.getAppBundleVersion()
 ```
 #  Reporting issues
-1.If you struggle with something feel free to [open an issue](https://github.com/onl1ner/TabBar/issues/new). Pull requests are also appreciated.
+1.If you struggle with something feel free to [open an issue](https://github.com/KingLiuHui/KaLaMi/issues). Pull requests are also appreciated.
 
 2.Please feel free to contact me via email ： liuhuijiaozhu@gmail.com.
