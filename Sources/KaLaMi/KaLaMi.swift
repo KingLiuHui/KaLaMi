@@ -89,5 +89,37 @@ public final class KaLaMi {
             return UIDevice.current.systemVersion
         #endif
     }
+    
+    /// 7.Get Country regionCode.
+    /// Added in version 1.1
+    /// - Returns: Country regionCode
+    public func getRegionCodeCode() -> String{
+            let currentLocale = Locale.current
+            #if os(macOS)
+            if #available(macOS 13, *) {
+                let result = currentLocale.region?.identifier ?? "unknown"
+                return result
+            } else {
+                let result = currentLocale.regionCode ?? "unknown"
+                return result
+            }
+            #elseif os(iOS)
+            if #available(iOS 16, *) {
+                let result = currentLocale.region?.identifier ?? "unknown"
+                return result
+            } else {
+                let result = currentLocale.regionCode ?? "unknown"
+                return result
+            }
+            #endif
+    }
+        
+    /// 8.Get the current preference language used by the App
+    /// Added in version 1.1
+    /// - Returns: preference language name
+    public func getPreferenceLanguage() -> String{
+        let preferredLanguage = Locale.preferredLanguages[0]
+        return String(preferredLanguage)
+    }
 }
 
